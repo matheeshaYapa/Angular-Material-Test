@@ -1,0 +1,13 @@
+<div fxLayout fxLayoutAlign="center">
+  <mat-card fxFlex="100%">
+    <div fxLayoutAlign="center">
+      <img mat-card-avatar [src]="userInfo.avatar" alt="AVATAR" (error)="onImageError($event)">
+    </div>
+    <div fxLayoutAlign="center">
+      <mat-card-title>{{ userInfo.email }}</mat-card-title>
+    </div>
+    <div fxLayoutAlign="center">
+      <mat-card-subtitle>{{ userInfo.role }}</mat-card-subtitle>
+    </div>
+  </mat-card>
+</div>

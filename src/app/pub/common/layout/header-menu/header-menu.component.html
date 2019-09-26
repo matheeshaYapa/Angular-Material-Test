@@ -1,0 +1,20 @@
+<div class="user-actions">
+  <span [matMenuTriggerFor]="menu" class="hand-pointer" fxLayout="row" fxLayoutAlign="center center">
+    <img mat-card-avatar [src]="'https://i.pinimg.com/originals/a6/0e/1b/a60e1bba254942b6a081d8abc5f06701.jpg'" alt="AVATAR" (error)="onErrorHandler($event)">
+  </span>
+
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </a>
+    <a mat-menu-item>
+      <mat-icon>add_alert</mat-icon>
+      <span>Notifications</span>
+    </a>
+    <a mat-menu-item>
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Logout</span>
+    </a>
+  </mat-menu>
+</div>

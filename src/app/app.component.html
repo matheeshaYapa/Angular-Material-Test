@@ -1,5 +1,5 @@
-<app-main-nav>
-  <button mat-raised-button color="accent"> Click Me </button>
-  <app-data-table></app-data-table>
-</app-main-nav>
+<div id="inline-wrapper"
+     [ngClass]="{'light-theme': isLight === true, 'dark-theme': isLight === false}">
+  <app-layout></app-layout>
+</div>
 
